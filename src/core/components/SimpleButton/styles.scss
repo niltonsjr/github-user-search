@@ -1,0 +1,28 @@
+.simple-button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    width: 101px;
+    height: 40px;
+    background: #1890ff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border: none;
+
+    &:hover {
+        background: #46a5fd;
+    }
+
+    &:active {
+        background: #0084ff;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
