@@ -6,7 +6,7 @@
 
 .card-search {
   margin: auto;
-  margin-bottom: 3rem;  
+  margin-bottom: 3rem;
   width: 1251px;
   height: 270px;
   background: #e6f7ff;
@@ -38,9 +38,14 @@
   display: flex;
   align-items: center;
   padding: 8px 17px;
+  color: #000000;
 
   &:focus {
     outline: none;
+  }
+
+  &::placeholder {
+    color: #BFBFBF;
   }
 }
 
@@ -54,14 +59,12 @@
   width: 1251px;
   height: 387px;
   display: flex;
-  background:#F5F5F5;
+  background: #f5f5f5;
   border-radius: 8px;
 }
 
-
-
 .info-image-and-button {
-  margin: 0px 44px 0px 30px ;
+  margin: 0px 44px 0px 30px;
 }
 
 .user-image {
@@ -93,7 +96,7 @@
 
 .user-info {
   margin-top: 12px;
-  padding-top: 8px; 
+  padding-top: 8px;
   padding-left: 14px;
   padding-right: 14px;
   width: 870px;
@@ -134,11 +137,11 @@
 
   h4 {
     font-weight: 700;
-    margin-right: 5px;;
+    margin-right: 5px;
   }
 
-  a {    
-  font-family: Roboto;
-  color: #737373;
+  a {
+    font-family: Roboto;
+    color: #737373;
   }
 }

@@ -4,13 +4,13 @@ import { GithubUser } from "../../core/types/GithubUser";
 import { makeRequest } from "../../core/utils/request";
 import ImageLoader from "./components/ImageLoader/ImageLoader";
 import InfoLoader from "./components/InfoLoader/InfoLoader";
+import dayjs from 'dayjs';
 import "./styles.scss";
 
 const SearchPage = () => {
   const [user, setUser] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
-  const [inputColor, setInputColor] = useState("#BFBFBF");
   const [githubUser, setGithubUser] = useState<GithubUser>();
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -19,7 +19,6 @@ const SearchPage = () => {
 
   const handleFocus = (event: React.FocusEvent<HTMLInputElement>) => {
     event.target.select();
-    setInputColor("#000000");
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -50,7 +49,6 @@ const SearchPage = () => {
             value={user}
             placeholder="Usuário Github"
             className="search-input"
-            style={{ color: inputColor }}
             onChange={handleOnChange}
             onFocus={handleFocus}
           />
@@ -114,7 +112,7 @@ const SearchPage = () => {
                     <h4>Localidade:</h4> {githubUser?.location}
                   </div>
                   <div className="info-box">
-                    <h4>Membro desde:</h4> {githubUser?.created_at}
+                    <h4>Membro desde:</h4> {dayjs(githubUser?.created_at).format('DD/MM/YYYY')}
                   </div>
                 </div>
               </div>
