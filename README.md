@@ -13,7 +13,7 @@
 ### Objetivos: 
 
 
-- Crear el layout de la aplicación basado en un <a hrfer="https://www.figma.com/file/NzeGEIb5oSAGtbu2BfvhDS/BDS-Cap3">prototipo del Figma</a>
+- Crear el layout de la aplicación basado en un <a href="https://www.figma.com/file/NzeGEIb5oSAGtbu2BfvhDS/BDS-Cap3">prototipo del Figma</a>
 
 - Crear apartado para indicar usuario de Github al que buscar y listar la información del usuario a partir del API de Github.
 
